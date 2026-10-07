@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мои работы</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        ul, li {
+            list-style: none;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            min-height: 100vh;
+            background-color: rgba(129, 18, 18, 0.7);
+        }
+
+        .header {
+            text-align: center;
+            padding: 25px 20px;
+        }
+
+        .header h1 {
+            margin: 0 0 10px 0;
+            font-size: 50px;
+            color: white;
+        }
+
+        .block {
+            max-width: 750px;
+            margin: 40px auto;
+            padding: 40px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 20px;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+        }
+
+        .block h1 {
+            text-align: center;
+            color: #ffffff;
+            margin-bottom: 35px;
+            font-size: 30px;
+            font-weight: 400;
+        }
+
+        .category {
+            margin-bottom: 15px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .question {
+            padding: 20px;
+            color: #fff;
+            background-color: #e15959;
+            font-size: 20px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .question:hover {
+            background-color: #df6666;
+        }
+
+        .answer {
+            padding: 30px 20px;
+            color: #fff;
+            background-color: #f3888d;
+        }
+
+        .answer li {
+            padding: 8px 0;
+            border-bottom: 1px solid #f6d9db;
+        }
+
+        .answer li:last-child {
+            border-bottom: none;
+        }
+
+        .answer a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 8px;
+            border-radius: 4px;
+        }
+
+        .answer a:hover {
+            background-color: #e15959;
+        }
+
+        @media (max-width: 600px) {
+            .header h1 { font-size: 30px; }
+            .block { margin: 20px 16px; padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Группа ГРУППА</h1>
+        <h1>Фамилия Имя</h1>
+    </div>
+
+    <div class="block">
+        <h1>Список заданий</h1>
+
+        <details class="category">
+            <summary class="question">Практические работы</summary>
+            <ul class="answer">
+                <li><a href="./1.Роутер PHP (выполнено).docx" target="_blank" rel="noopener noreferrer">Пр 1: Роутер PHP</a></li>
+                <li><a href="./2.Контроллер и представление PHP (с ответами).docx" target="_blank" rel="noopener noreferrer">Пр 2: Контроллер и представление PHP</a></li>
+                <li><a href="./3.Модель (и БД) - готово.docx" target="_blank" rel="noopener noreferrer">Пр 3: Модель и БД</a></li>
+            </ul>
+        </details>
+
+        <details class="category">
+            <summary class="question">Лабораторные работы</summary>
+            <ul class="answer">
+                <li><a href="#">Пока нет</a></li>
+            </ul>
+        </details>
+
+        <details class="category">
+            <summary class="question">Домашние работы</summary>
+            <ul class="answer">
+                <li><a href="#">Пока нет</a></li>
+            </ul>
+        </details>
+    </div>
+</body>
+</html>
